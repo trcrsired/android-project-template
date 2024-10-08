@@ -26,7 +26,7 @@ AAPT=aapt
 DX=d8
 ZIPALIGN=zipalign
 APKSIGNER=apksigner
-PLATFORM=$ANDROID_SDK_ROOT/platforms/android-30
+PLATFORM=$ANDROID_SDK_ROOT/platforms/android-30/android.jar
 
 init() {
 	#rm -rf .git README.md
