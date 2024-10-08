@@ -56,7 +56,7 @@ build() {
 	ant compile -Dplatform=$PLATFORM
 
 	echo "Translating in Dalvik bytecode..."
-	$DX --dex --output=classes.dex obj
+	$DX --output=classes.dex obj
 
 	echo "Making APK..."
 	$AAPT package -f -m -F bin/app.unaligned.apk -M AndroidManifest.xml -S res -I $PLATFORM
