@@ -29,7 +29,7 @@ APKSIGNER=apksigner
 PLATFORM=$ANDROID_SDK_ROOT/platforms/android-30
 
 init() {
-	rm -rf .git README.md
+	#rm -rf .git README.md
 	echo "Making ${PACKAGE_NAME}..."
 	mkdir -p "$PACKAGE_DIR"
 	mkdir obj
