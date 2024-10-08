@@ -12,9 +12,8 @@
     <target name="compile">
         <echo>Compiling Java source</echo>
 
-        <javac classpath="src"
-            bootclasspath="${platform}"
-            srcdir="${src.dir}"
+	<javac classpath="${platform}:${src.dir}"
+	    srcdir="${src.dir}"
             destdir="${build.dir}" />
     </target>
 
