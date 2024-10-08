@@ -17,11 +17,16 @@ set -e
 APP_NAME="Your App Name"
 PACKAGE_NAME="your.pkg.name"
 
-AAPT="/path/to/android-sdk/build-tools/<your version>/aapt"
-DX="/path/to/android-sdk/build-tools/<your version>/dx"
-ZIPALIGN="/path/to/android-sdk/build-tools/<your version>/zipalign"
-APKSIGNER="/path/to/android-sdk/build-tools/<your version>/apksigner"
-PLATFORM="/path/to/android-sdk/platforms/android-<your version>/android.jar"
+#AAPT="/path/to/android-sdk/build-tools/<your version>/aapt"
+#DX="/path/to/android-sdk/build-tools/<your version>/dx"
+#ZIPALIGN="/path/to/android-sdk/build-tools/<your version>/zipalign"
+#APKSIGNER="/path/to/android-sdk/build-tools/<your version>/apksigner"
+#PLATFORM="/path/to/android-sdk/platforms/android-<your version>/android.jar"
+AAPT=aapt
+DX=d8
+ZIPALIGN=zipalign
+APKSIGNER=apksigner
+PLATFORM=$ANDROID_SDK_ROOT/platforms/android-30
 
 init() {
 	rm -rf .git README.md
